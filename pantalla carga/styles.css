@@ -1,0 +1,52 @@
+body{
+    background-color: #202020;
+}
+
+/*
+
+.loader{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    border-top-color: transparent;
+    animation: spin 1.2s
+        linear infinite;
+}
+
+@keyframes spin {
+    to{
+        transform:rotate(360deg);
+    }
+} 
+
+*/
+
+/* Manera más bonita: */
+
+
+.loader{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    border-top-color: transparent;
+    animation: spin 1.2s
+        linear infinite;
+}
+
+.loader::before,
+.loader::after{
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+}
+
+.loader::before{
+    
+}
+@keyframes spin {
+    to{
+        transform:rotate(360deg);
+    }
+}
